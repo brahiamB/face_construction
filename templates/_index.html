@@ -1,0 +1,150 @@
+
+
+{% load static %}
+
+<!DOCTYPE HTML>
+
+
+<html>
+	<head>
+		<title>{% block title %}DjangoX{% endblock title %}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		{% block css %}
+		<link rel="stylesheet" href="{% static 'css/main.css' %} " />
+		
+		{% endblock %}
+		 <meta charset="utf-8">
+ 
+ 
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+{% block header %}
+				<!-- Header -->
+					<header id="header" class="alt">
+
+						<!-- Logo -->
+							<div class="logo">
+								<a href="index.html">
+								<img class="logo_img" src="{% static 'images/fase.png' %}" alt="" /> </a>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="current"><a href="{% url 'home' %}">Home</a></li>
+									<li>
+										<a href="#services" class="icon solid fa-angle-down scrolly">Sevices</a>
+										<ul>
+											<li>
+												<a href="#">PAVING ></a>
+												<ul>
+													<li><a href="{% url 'ResidentialPaving' %}">Residential Paving</a></li>
+													<li><a href="{% url 'commercialpavingAsphalt'%}">Commercial Paving </a></li>
+													{% comment %} <li><a href="#" >Gravel Base Work</a></li>  {% endcomment %}
+													{% comment %} <li><a href="{% url 'concrete' %}" >Concrete Paving</a></li>  {% endcomment %}
+												</ul>
+											</li>
+											{% comment %} <li><a href="{% url 'demolition' %}">DEMOLITION</a></li> {% endcomment %}
+											<li><a href="{% url 'excavation'%}">EXCAVATION</a></li>
+											<li><a href="{% url 'snow'%}">SNOW REMOVAL</a></li>
+											<li><a href="{% url 'landscaping' %}">LANDSCAPING</a></li>
+											{% comment %} <li><a href="{% url 'demolition' %}">TRUCKING SERVICES</a></li> {% endcomment %}
+											
+										</ul>
+									</li>
+{% comment %} 									
+									<li>
+										<a href="#" class="icon solid fa-angle-down">Locations</a>
+										<ul>
+											<li><a href="#">GTA </a></li>
+											<li><a href="#">Peel Region </a></li>
+											<li><a href="#">Halton Reginon</a></li>
+											
+										</ul>
+									</li> {% endcomment %}
+									<li><a href="{% url 'about'%}">About</a></li>
+									<li><a href="{% url 'gallery'%}">Gallery</a></li>
+									{% comment %} <li><a href="{% url 'elements' %}">Elements</a></li>
+								 {% endcomment %}
+								
+								</ul>
+							</nav>
+
+					</header>
+{% endblock header %}
+
+{% block sections %}
+{% endblock sections %}
+			
+
+					{% block footer %}				
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h3>SERVING GTA AND THE SURROUNDINGS</h3>
+								<p>Toronto, Mississauga, Brampton, vaughan, Markham, Burlington,Richmond Hill,
+								Caledon, Halton Hills, Oakville, Milton, York, Hamilton</p>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<section class="narrow">
+								<h4>SERVICES</h4>
+								<ul class="links">
+									<li><a href="{% url 'landscaping' %}">Excavation</a></li>
+									<li><a href="{% url 'landscaping' %}">Paving</a></li>
+									<li><a href="{% url 'landscaping' %}">Concrete/jewelstone</a></li>
+									<li><a href="{% url 'landscaping' %}">Snow Removal</a></li>
+									<li><a href="{% url 'home' %}#services" class="scrolly">More ...</a></li>
+									
+								</ul>
+							</section>
+							<section class="narrow">
+								<h4>ABOUT</h4>
+								<ul class="links">
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Galeries </a></li>
+									<li><a href="#">Location</a></li>
+									<li><a href="#">Hours</a></li>
+									
+								</ul>
+							</section>
+							<section>
+								<h3>Morbi sed volutpat</h3>
+								<p>Sed vulputate sem tristique cursus sed magna gravida non lorem ipsum dolor sit amet.<p>
+								<p><a  href="tel:416-896-2802" class="major">(416) 896-2802</a></p>
+							</section>
+						</div>
+						<div class="copyright">
+							<p>&copy; Fase inc. All rights reserved.</p>
+						</div>
+					</footer>
+					{% endblock footer %}
+
+
+			</div>
+{% block javascript %}
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js'%}"></script>
+			<script src="{% static 'js/jquery.dropotron.min.js'%}"></script>
+			<script src="{% static 'js/jquery.selectorr.min.js'%}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js'%}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js'%}"></script>
+			<script src="{% static 'js/browser.min.js'%}"></script>
+			<script src="{% static 'js/breakpoints.min.js'%}"></script>
+			<script src="{% static 'js/util.js'%}"></script>
+			<script src="{% static 'js/main.js'%}"></script>
+			<script src="{% static 'js/gallery.js'%}"></script>
+			
+{% endblock javascript %}
+	</body>
+</html>

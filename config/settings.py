@@ -23,13 +23,15 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django_sass',
+    
 
     # Third-party
     'allauth',
     'allauth.account',
     'crispy_forms',
     'debug_toolbar',
-
+   
     # Local
     'users',
     'pages',

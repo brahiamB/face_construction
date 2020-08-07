@@ -1,7 +1,84 @@
-{% extends '_base.html' %}
+{% extends '_index.html' %}
 
 {% block title %}About page{% endblock %}
 
-{% block content %}
-<h1>About page</h1>
-{% endblock content %}
+{% block sections %}
+{% load static %}
+
+	<section id="banner" class="banner">
+						<div class="content primary">
+							<header>
+								<h1>About Us</h1>
+								<p>Call Now: <a href="tel:416-896-2802" class="major">(416) 896-2802</a></p>
+							</header>
+							
+						</div>
+						<div class="content secondary">
+							<div class="inner">
+								<ul class="actions special">
+								<li><a href="#email" class="button large wide scrolly">Get a FREE Estimate!</a></li>
+							</ul>
+							</div>
+						</div>
+						<img src="{% static 'images/exca_one.jpg' %}" alt="" /> 
+
+	</section>
+	
+
+			
+
+<section id="one" class="main alt">
+
+
+<div class=" alt">
+		<div class="content2">
+
+				<div class="row gtr-200">
+										<div class="col-6 col-12-medium">
+
+
+												<img class="image main fit pic" src="{% static 'images/exca_one.jpg' %}" alt="" />
+
+										</div> <!--end col-->
+
+											<div class="col-6 col-12-medium">
+
+						
+													<h2>Who We Are </h2>
+														
+																<p>
+																
+                                                                Fase Construction has been delivering innovative, sustainable, and quality solutions to communities across GTA and surrounding areas.We provide thorough, professional demolition, excavation, Paving, Interlock and Concrete  and land clearing services that let you get started on your work when you need to.
+ 
+                                                                As a fully licensed and insured multi-disciplinary contractor, we boast an extensive inventory of equipment and experienced professionals. Fase construction is committed to operating and adhering to all regulatory obligations enforced by the Ministry of Labour and the Ontario Health and Safety Administration.
+
+
+																	</p>
+														
+						
+											</div> <!--end col-->
+						
+						
+						
+				</div><!--row-->
+					
+
+
+
+
+		</div><!--content-->
+	</div><!--inner-->
+
+
+
+<!--- pre footer -->
+
+	<header class="accent1">
+							<h1>LET US SERVE YOU</h1>
+						<a href="#email" class="button large wide scrolly">Get a FREE Estimate!</a>
+	</header>
+
+</section>
+									
+	
+{% endblock sections %}

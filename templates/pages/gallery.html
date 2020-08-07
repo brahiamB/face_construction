@@ -1,0 +1,118 @@
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
+
+</head>
+
+{% extends '_index.html' %}
+
+{% block title %}About page{% endblock %}
+
+{% block sections %}
+
+					<section id="two" class="main accent2">
+						<header>
+							<h2>What Sets Us Apart</h2>
+							<p>
+fase provides you with an efficient, professional experience from the first visit to the last. Our service team will arrive at your location in professional attire, prepared to service your driveway with respect, quality of care and experience. Resulting in a beautiful result that you can show off to your friends and family.
+
+</p>
+						</header>
+						<div class="inner">
+							<span class="image main"></span>
+						</div>
+					</section>
+
+<section id="one" class="main alt">
+
+
+<div class="wrapper_gallery">
+<!-- Grid row -->
+<div class="row">
+
+  <!-- Grid column -->
+  <div class="col-md-12 d-flex justify-content-center mb-5">
+
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="Excavation">Excavation</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="Snow">Snow</button>
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+<!-- Grid row -->
+
+
+<div class="gallery" id="gallery">
+
+
+ 
+  
+  {% for i in object_list  %}
+  
+
+ 
+
+
+<div class="mb-3 pics animation all {{i.job}} ">
+<a href="/{{i.picture.url}}" data-lightbox="photos">
+<img class="img-fluid" src="/{{i.picture.url}}">
+</a>
+</div>
+
+
+
+  {% endfor %}
+
+ 
+
+
+</div> <!--class gallery-->
+</div> <!-- wrapper -->
+
+</section>
+ <section id="two" class="main accent2">
+ <header class="accent1">
+							<h1>LET US SERVE YOU</h1>
+						<a href="#email" class="button large wide scrolly">Get a FREE Estimate!</a>
+	</header>
+ </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ {% endblock   %}
+
