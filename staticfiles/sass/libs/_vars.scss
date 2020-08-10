@@ -16,7 +16,7 @@
 		element-margin:		2rem,
 		inner:				68rem,
 		header:				(
-			default:		3.25rem,
+			default:		4.25rem,
 			small:			44px
 		),
 		padding:			(
@@ -31,13 +31,47 @@
 	$font: (
 		family:				('Lato', Arial, Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
-		weight:				200,
+		weight:				300,
 		weight-bold:		400,
 		weight-extrabold:	700,
 		bold:				800,
+	
 	);
 
 // Palette.
+	// $palette: (
+	// 	bg-shadow:			rgba(0,0,0,0.125),
+
+	// 	bg:					#ffffff,
+	// 	bg-alt:				#f7f7f7,
+	// 	fg:					#3b3b3b,
+	// 	fg-bold:			#3b3b3b,
+	// 	fg-light:			#acacac,
+	// 	border:				#eeeeee,
+	// 	border-bg:			rgba(144,144,144,0.075),
+
+	// 	accent1: (
+	// 		bg:				#23b1ec,
+	// 		fg:				rgba(255,255,255,0.75),
+	// 		fg-bold:		#ffffff,
+	// 		fg-light:		rgba(255,255,255,0.5),
+	// 		border:			rgba(255,255,255,0.25),
+	// 		border-bg:		rgba(255,255,255,0.075)
+	// 	),
+
+	// 	accent2: (
+	// 		bg:				#80bb2d,
+	// 		fg:				rgba(255,255,255,0.75),
+	// 		fg-bold:		#ffffff,
+	// 		fg-light:		rgba(255,255,255,0.5),
+	// 		border:			rgba(255,255,255,0.25),
+	// 		border-bg:		rgba(255,255,255,0.075)
+	// 	)
+
+	// );
+
+
+
 	$palette: (
 		bg-shadow:			rgba(0,0,0,0.125),
 
@@ -50,7 +84,7 @@
 		border-bg:			rgba(144,144,144,0.075),
 
 		accent1: (
-			bg:				#23b1ec,
+			bg:				#2325c4,
 			fg:				rgba(255,255,255,0.75),
 			fg-bold:		#ffffff,
 			fg-light:		rgba(255,255,255,0.5),
@@ -59,7 +93,7 @@
 		),
 
 		accent2: (
-			bg:				#80bb2d,
+			bg:				#080808,
 			fg:				rgba(255,255,255,0.75),
 			fg-bold:		#ffffff,
 			fg-light:		rgba(255,255,255,0.5),
@@ -68,3 +102,6 @@
 		)
 
 	);
+
+
+	$blue : #2325c4;
