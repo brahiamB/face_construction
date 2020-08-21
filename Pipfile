@@ -17,3 +17,6 @@ dj-database-url = "*"
 whitenoise = "*"
 gunicorn = "*"
 twine = "*"
+
+[requires]
+python_version = "3.7"
